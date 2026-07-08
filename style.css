@@ -1756,6 +1756,7 @@ body.dark-mode .cat-details-box ul li::before {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 30px;
+        padding-top: 40px;
     }
     
     .hero-info {
@@ -1770,14 +1771,10 @@ body.dark-mode .cat-details-box ul li::before {
         order: -1;
     }
     
-    .graphic-circle {
+    .logo-tilt-card {
         width: 260px;
         height: 260px;
-    }
-    
-    .hero-logo-img {
-        width: 200px;
-        height: 200px;
+        padding: 12px;
     }
     
     /* Contact grid */
@@ -1804,10 +1801,31 @@ body.dark-mode .cat-details-box ul li::before {
     
     .hero-info h2 {
         font-size: 1.8rem;
+        line-height: 1.4;
     }
     
     .hero-info p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .hero-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .hero-cta-buttons a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .logo-tilt-card {
+        width: 220px;
+        height: 220px;
+        padding: 8px;
     }
     
     .interactive-quote-card {
