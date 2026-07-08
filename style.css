@@ -978,10 +978,11 @@ body.dark-mode .obj-icon {
 
 /* ================= ACTIVITIES VIEW ================= */
 .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 
 .category-card {
@@ -995,6 +996,8 @@ body.dark-mode .obj-icon {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1 1 300px;
+    max-width: 450px;
 }
 
 .category-card:hover {
