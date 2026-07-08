@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز إبداع كربلاء | لدعم وتطوير الشباب</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="مركز إبداع كربلاء هو مركز شبابي تطوعي يهدف لتمكين وتطوير مهارات الشباب ودعم المبادرات المجتمعية في محافظة كربلاء المقدسة.">
+    <meta name="keywords" content="مركز إبداع كربلاء, إبداع كربلاء, عمل تطوعي, شباب كربلاء, تطوير مهارات, الحسينية, عون">
+    <meta property="og:title" content="مركز إبداع كربلاء | لدعم وتطوير الشباب">
+    <meta property="og:description" content="نموذج رائد في العمل التطوعي الإبداعي يسهم في بناء مجتمع واعٍ متعاون ومبادر.">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Web App Manifest / Favicon -->
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+
+    <!-- Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons: FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Custom Background Glowing Orbs for Visual Richness -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="assets/logo.jpg" alt="شعار مركز إبداع كربلاء" class="header-logo">
+                <div class="title-meta">
+                    <h1>مركز إبداع كربلاء</h1>
+                    <span>لدعم وتطوير الشباب</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="القائمة الرئيسية">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-view="home"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                    <li><a href="#objectives" class="nav-link" data-view="objectives"><i class="fa-solid fa-bullseye"></i> أهدافنا</a></li>
+                    <li><a href="#activities" class="nav-link" data-view="activities"><i class="fa-solid fa-briefcase"></i> نشاطاتنا</a></li>
+                    <li><a href="#contact" class="nav-link" data-view="contact"><i class="fa-solid fa-envelope"></i> اتصل بنا</a></li>
+                    <li><a href="https://bespoke-bonbon-c57e81.netlify.app/" target="_blank" class="nav-btn-join"><i class="fa-solid fa-user-plus"></i> انضم إلينا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="تبديل المظهر">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="قائمة المحمول">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-area">
+                <img src="assets/logo.jpg" alt="شعار مركز إبداع كربلاء" class="header-logo">
+                <h2>إبداع كربلاء</h2>
+            </div>
+            <button id="closeDrawerBtn" class="close-drawer-btn" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="mobile-nav" aria-label="قائمة المحمول التفاعلية">
+            <ul>
+                <li><a href="#home" class="drawer-link active" data-view="home"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                <li><a href="#objectives" class="drawer-link" data-view="objectives"><i class="fa-solid fa-bullseye"></i> أهدافنا</a></li>
+                <li><a href="#activities" class="drawer-link" data-view="activities"><i class="fa-solid fa-briefcase"></i> نشاطاتنا</a></li>
+                <li><a href="#contact" class="drawer-link" data-view="contact"><i class="fa-solid fa-envelope"></i> اتصل بنا</a></li>
+                <li class="separator"></li>
+                <li><a href="https://bespoke-bonbon-c57e81.netlify.app/" target="_blank" class="drawer-btn-join"><i class="fa-solid fa-user-plus"></i> انضم إلينا (الاستمارة)</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1F5UCsYoJ5/" target="_blank" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://t.me/+TCrO10b8ZpsxNWIy" target="_blank" aria-label="تليجرام"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.instagram.com/ibdaa.karbala?igsh=bXplbGdpbmJrencx" target="_blank" aria-label="انستغرام"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com/@ibdaa.karbala" target="_blank" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://chat.whatsapp.com/GnHebeZL2Dn3Dib23V0MzS?mode=gi_t" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        
+        <!-- ================= HOME VIEW ================= -->
+        <section id="home" class="view-section active">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-container">
+                    <div class="hero-info">
+                        <span class="hero-badge">مرحباً بك في مركز إبداع كربلاء</span>
+                        <h2>نصنع المستقبل بأيدي الطاقات الشبابية الواعدة</h2>
+                        <p>مركز إبداع كربلاء لدعم وتطوير الشباب هو مركز شبابي تطوعي رائد نشأ من رحم العطاء والإبداع، يهدف إلى احتضان الكفاءات وتطوير المهارات القيادية والإبداعية لخدمة كربلاء المقدسة والمجتمع.</p>
+                        
+                        <div class="hero-cta-buttons">
+                            <a href="https://bespoke-bonbon-c57e81.netlify.app/" target="_blank" class="btn-primary"><i class="fa-solid fa-file-signature"></i> سجل معنا الآن (استمارة 2026)</a>
+                            <a href="#objectives" class="btn-secondary nav-trigger" data-target="objectives">اكتشف أهدافنا <i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-graphic">
+                        <div class="logo-tilt-card">
+                            <div class="logo-img-wrapper">
+                                <img src="assets/logo.jpg" alt="شعار مركز إبداع كربلاء" class="hero-logo-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wave SVG Separator -->
+                <div class="hero-wave">
+                    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                        <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Stats Counter Section -->
+            <div class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                            <div class="stat-num" data-val="1200">0</div>
+                            <div class="stat-label">متطوع ومتطوعة</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <div class="stat-num" data-val="85">0</div>
+                            <div class="stat-label">مبادرة تطوعية ناجحة</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-num" data-val="42">0</div>
+                            <div class="stat-label">ورشة تدريبية وتأهيلية</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="stat-num" data-val="10">0</div>
+                            <div class="stat-label">مفارز طبية وخدمية</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video/Showcase Cards Section -->
+            <div class="showcase-section">
+                <div class="container">
+                    <div class="section-title-center">
+                        <span>رؤيتنا وقيمنا</span>
+                        <h3>لماذا مركز إبداع كربلاء؟</h3>
+                        <p>نسعى لبناء نموذج تطوعي فريد يتميز بالاستدامة والابتكار وخدمة المجتمع في مختلف الظروف.</p>
+                    </div>
+
+                    <div class="showcase-grid">
+                        <div class="showcase-card">
+                            <div class="showcase-img-holder">
+                                <i class="fa-solid fa-eye card-large-icon"></i>
+                            </div>
+                            <h4>رؤيتنا</h4>
+                            <p>أن نكون النموذج الرائد والأكثر تميزاً في العمل التطوعي والإبداعي في كربلاء المقدسة، ونقود التغيير الإيجابي وبناء الكفاءات الشابة.</p>
+                        </div>
+                        <div class="showcase-card">
+                            <div class="showcase-img-holder">
+                                <i class="fa-solid fa-rocket card-large-icon"></i>
+                            </div>
+                            <h4>رسالتنا</h4>
+                            <p>استقطاب وتوجيه الطاقات والمهارات الشبابية وتمكينها من خلال برامج نوعية تسهم في تقديم الخدمات الإنسانية والتنظيمية في مختلف المحافل.</p>
+                        </div>
+                        <div class="showcase-card">
+                            <div class="showcase-img-holder">
+                                <i class="fa-solid fa-gem card-large-icon"></i>
+                            </div>
+                            <h4>قيمنا</h4>
+                            <p>العطاء غير المشروط، الأمانة والشفافية، العمل الجماعي، الإبداع والابتكار، الالتزام بالمسؤولية الوطنية والمجتمعية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= OBJECTIVES VIEW ================= -->
+        <section id="objectives" class="view-section">
+            <div class="container">
+                <div class="section-title-center">
+                    <span>رسالتنا السامية</span>
+                    <h3>أهداف مركز إبداع كربلاء</h3>
+                    <p>نعمل وفق خطط مدروسة لتحقيق أهداف جوهرية تنهض بواقع الشباب والعمل الإنساني في كربلاء.</p>
+                </div>
+
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠١</span>
+                            <div class="obj-icon"><i class="fa-solid fa-arrows-to-eye"></i></div>
+                        </div>
+                        <h4>تطوير المهارات</h4>
+                        <p>تنمية وتطوير المهارات الشخصية والمهنية للمتطوعين، مع التركيز المكثف على تنمية المهارات الإبداعية والقيادية لديهم.</p>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠٢</span>
+                            <div class="obj-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        </div>
+                        <h4>التوعية والثقافة</h4>
+                        <p>نشر ثقافة العمل التطوعي وأهميته الكبرى في بناء المجتمعات المستقرة في أوساط المجتمع الكربلائي والشبابي.</p>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠٣</span>
+                            <div class="obj-icon"><i class="fa-solid fa-people-group"></i></div>
+                        </div>
+                        <h4>بناء بيئة محفّزة للعمل</h4>
+                        <p>خلق بيئة تفاعلية محفزة للعمل الجماعي المشترك، وتعزيز أواصر التعاون الإيجابي والأخوي بين جميع أفراد المتطوعين.</p>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠٤</span>
+                            <div class="obj-icon"><i class="fa-solid fa-list-check"></i></div>
+                        </div>
+                        <h4>تنفيذ مشاريع تطوعية</h4>
+                        <p>تخطيط وإقامة مشاريع ومبادرات تطوعية مستدامة وقابلة للتطوير ذات أثر مادي ومعنوي ملموس في خدمة محافظة كربلاء.</p>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠٥</span>
+                            <div class="obj-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        </div>
+                        <h4>احتضان الطاقات الشبابية</h4>
+                        <p>رعاية المواهب والقدرات الفكرية والعملية لدى الشباب وتوجيهها لتكون طاقة منتجة تخدم الصالح العام بأساليب مبتكرة.</p>
+                    </div>
+
+                    <div class="objective-card">
+                        <div class="obj-header">
+                            <span class="obj-number">٠٦</span>
+                            <div class="obj-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        </div>
+                        <h4>دعم المبادرات المجتمعية</h4>
+                        <p>مؤازرة الأفكار والمشاريع الفردية والجماعية التي تسعى لتحسين جودة الحياة اليومية والخدمية والصحية لأهالي كربلاء.</p>
+                    </div>
+                </div>
+
+                <!-- Interactive Quote Card -->
+                <div class="interactive-quote-card">
+                    <div class="quote-content">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p>العمل التطوعي ليس مجرد سد خانة فراغ، بل هو وعيٌ وانتماء، ورسالة نبيلة نؤديها لرفعة مدينتنا وخدمة أهلنا وزائري كربلاء المقدسة.</p>
+                        <span class="quote-author">إدارة مركز إبداع كربلاء</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ACTIVITIES VIEW ================= -->
+        <section id="activities" class="view-section">
+            <div class="container">
+                <div class="section-title-center">
+                    <span>ميادين العطاء</span>
+                    <h3>نشاطاتنا ومجالات عملنا</h3>
+                    <p>نعمل في مجالات متنوعة تغطي الاحتياجات الإنسانية والتدريبية والخدمية في المجتمع.</p>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="categories-grid">
+                    <div class="category-card" data-category="arbaeen">
+                        <div class="category-icon-wrapper green-theme">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <h4>الزيارة الأربعينية</h4>
+                        <p>شرف الخدمة السنوية من تنظيم وإدارة مفارز طبية وإرشادية وتنظيمية لخدمة ملايين زوار الإمام الحسين (ع).</p>
+                        <span class="cat-link">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+
+                    <div class="category-card" data-category="training">
+                        <div class="category-icon-wrapper purple-theme">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <h4>الورش التدريبية</h4>
+                        <p>تنظيم دورات في البرمجة، الإسعافات الأولية، المهارات القيادية والإبداعية لتأهيل الشباب لسوق العمل والخدمة العامة.</p>
+                        <span class="cat-link">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+
+                    <div class="category-card" data-category="activities">
+                        <div class="category-icon-wrapper blue-theme">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h4>النشاطات والفعاليات</h4>
+                        <p>إقامة المهرجانات الثقافية والتوعوية، والمسابقات التنموية والشبابية التي تعزز الوعي والترابط المجتمعي.</p>
+                        <span class="cat-link">عرض التفاصيل <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACT VIEW ================= -->
+        <section id="contact" class="view-section">
+            <div class="container">
+                <div class="section-title-center">
+                    <span>تواصل معنا</span>
+                    <h3>يسعدنا تواصلك وخدمتك</h3>
+                    <p>إذا كان لديك أي استفسار أو تود تقديم مبادرة أو التعاون معنا، لا تتردد في الاتصال بنا.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-panel">
+                        <h4>أرسل لنا رسالة</h4>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="contact_name">الاسم الكامل</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="contact_name" name="contact_name" placeholder="أدخل اسمك الكريم" required>
+                                    <span class="form-error">يرجى كتابة الاسم الكامل</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_email">البريد الإلكتروني (اختياري)</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="contact_email" name="contact_email" placeholder="example@domain.com">
+                                    <span class="form-error">يرجى إدخال بريد إلكتروني صحيح</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_phone">رقم الهاتف</label>
+                                <div class="input-wrapper">
+                                    <input type="tel" id="contact_phone" name="contact_phone" placeholder="07XXXXXXXXX" required>
+                                    <span class="form-error">يرجى كتابة رقم الهاتف (١١ رقماً)</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_msg">نص الرسالة</label>
+                                <div class="input-wrapper">
+                                    <textarea id="contact_msg" name="contact_msg" rows="5" placeholder="اكتب استفسارك أو رسالتك هنا..." required></textarea>
+                                    <span class="form-error">يرجى كتابة نص الرسالة</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary form-submit-btn">إرسال الرسالة عبر واتساب <i class="fa-brands fa-whatsapp"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details / Info Card -->
+                    <div class="contact-info-card glass-panel">
+                        <h4>تفاصيل الاتصال والمقر الرئيسي</h4>
+                        <div class="info-item-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="info-details">
+                                    <h5>العنوان والمقر الرئيسي</h5>
+                                    <p>كربلاء المقدسة - حي الحسين - شارع المصلحة - مقابل مندي طبق اليمن</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="info-details">
+                                    <h5>أرقام الهواتف والتواصل</h5>
+                                    <p><a href="tel:07745532522">07745532522</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="info-details">
+                                    <h5>ساعات العمل والتواجد</h5>
+                                    <p>طوال أيام الأسبوع: 8:00 صباحاً - 10:00 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Embed Showcase -->
+                        <div class="map-showcase">
+                            <div class="map-overlay-content">
+                                <i class="fa-solid fa-map-pin map-pin-icon"></i>
+                                <h5>موقع المقر على الخارطة</h5>
+                                <a href="https://maps.app.goo.gl/aVXABP8nfqe8XC1UA?g_st=ic" target="_blank" class="btn-secondary btn-sm"><i class="fa-solid fa-diamond-turn-right"></i> فتح الموقع في خرائط جوجل</a>
+                            </div>
+                        </div>
+
+                        <div class="social-wrapper">
+                            <h5>منصات التواصل ومجموعة التبليغات</h5>
+                            <div class="social-links-grid">
+                                <a href="https://www.facebook.com/share/1F5UCsYoJ5/" target="_blank" class="social-btn facebook" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i> فيسبوك</a>
+                                <a href="https://t.me/+TCrO10b8ZpsxNWIy" target="_blank" class="social-btn telegram" aria-label="تليجرام"><i class="fa-brands fa-telegram"></i> تليجرام</a>
+                                <a href="https://www.instagram.com/ibdaa.karbala?igsh=bXplbGdpbmJrencx" target="_blank" class="social-btn instagram" aria-label="انستغرام"><i class="fa-brands fa-instagram"></i> انستغرام</a>
+                                <a href="https://tiktok.com/@ibdaa.karbala" target="_blank" class="social-btn tiktok" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i> تيك توك</a>
+                                <a href="https://chat.whatsapp.com/GnHebeZL2Dn3Dib23V0MzS?mode=gi_t" target="_blank" class="social-btn whatsapp-group-btn" style="grid-column: span 2; background-color: #25d366;"><i class="fa-brands fa-whatsapp"></i> مجموعة الواتساب الرسمية للتبليغات</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-column brand-desc">
+                    <img src="assets/logo.jpg" alt="شعار مركز إبداع كربلاء" class="footer-logo">
+                    <h3>مركز إبداع كربلاء</h3>
+                    <p>مركز شبابي تطوعي يسعى لخدمة المجتمع، تمكين طاقات الشباب، ورعاية المبادرات الإبداعية والمشاريع المستدامة.</p>
+                </div>
+                <div class="footer-column quick-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" class="nav-trigger" data-target="home"><i class="fa-solid fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#objectives" class="nav-trigger" data-target="objectives"><i class="fa-solid fa-chevron-left"></i> أهدافنا</a></li>
+                        <li><a href="#activities" class="nav-trigger" data-target="activities"><i class="fa-solid fa-chevron-left"></i> نشاطاتنا</a></li>
+                        <li><a href="#contact" class="nav-trigger" data-target="contact"><i class="fa-solid fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contact-summary">
+                    <h4>تواصل معنا مباشرة</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> كربلاء - حي الحسين - شارع المصلحة</p>
+                    <p><i class="fa-solid fa-phone"></i> 07745532522</p>
+                    <p><i class="fa-solid fa-envelope"></i> karbalacreativitycenter@gmail.com</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/share/1F5UCsYoJ5/" target="_blank" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://t.me/+TCrO10b8ZpsxNWIy" target="_blank" aria-label="تليجرام"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/ibdaa.karbala?igsh=bXplbGdpbmJrencx" target="_blank" aria-label="انستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@ibdaa.karbala" target="_blank" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://chat.whatsapp.com/GnHebeZL2Dn3Dib23V0MzS?mode=gi_t" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 مركز إبداع كربلاء لدعم وتطوير الشباب. جميع الحقوق محفوظة.</p>
+                <div class="developer-credit">
+                    <p>تطوير ودعم الشباب وتأهيل الكفاءات</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Category Detail Modal -->
+    <div id="categoryModal" class="category-modal" aria-hidden="true">
+        <div class="cat-modal-content">
+            <button id="closeCatModalBtn" class="close-cat-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="cat-modal-header">
+                <div id="catModalIcon" class="cat-modal-icon"></div>
+                <h3 id="catModalTitle">عنوان التصنيف</h3>
+            </div>
+            <div class="cat-modal-body">
+                <p id="catModalDesc">وصف تفصيلي للتصنيف وما يقدمه المركز من خدمات ومبادرات تطوعية داخله.</p>
+                <div class="cat-modal-gallery">
+                    <h5>معرض الصور والتفاصيل</h5>
+                    <div class="cat-details-box">
+                        <ul id="catModalDetailsList">
+                            <!-- Dynamically loaded details -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-modal-footer">
+                <a href="https://bespoke-bonbon-c57e81.netlify.app/" target="_blank" class="btn-primary btn-sm"><i class="fa-solid fa-file-signature"></i> انضم إلينا وشارك في هذا المجال</a>
+            </div>
+        </div>
+    </div>
+    <div class="cat-modal-overlay" id="catModalOverlay"></div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
